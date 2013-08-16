@@ -81,4 +81,12 @@
       <Name>Groceries.Core.Droid</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Sample-Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="..\Sample-Data\Item.json">
+      <Link>Sample-Data\Item.json</Link>
+    </AndroidAsset>
+  </ItemGroup>
 </Project>

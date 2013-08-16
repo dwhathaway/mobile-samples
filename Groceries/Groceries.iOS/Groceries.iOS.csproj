@@ -84,6 +84,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Sample-Data\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -121,5 +122,10 @@
       <Version>1.1.1</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="..\Sample-Data\Item.json">
+      <Link>Sample-Data\Item.json</Link>
+    </BundleResource>
   </ItemGroup>
 </Project>
