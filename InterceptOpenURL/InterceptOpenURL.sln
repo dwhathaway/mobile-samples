@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intercept.iOS", "Intercept.iOS\Intercept.iOS.csproj", "{9A1F0245-3DA3-461D-ABF5-B8325B29EACA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intercept.Droid", "Intercept.Android\Intercept.Droid.csproj", "{6C49E8EA-C114-4CD1-987F-51E8E92CEE01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C49E8EA-C114-4CD1-987F-51E8E92CEE01}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{6C49E8EA-C114-4CD1-987F-51E8E92CEE01}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{6C49E8EA-C114-4CD1-987F-51E8E92CEE01}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{6C49E8EA-C114-4CD1-987F-51E8E92CEE01}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{6C49E8EA-C114-4CD1-987F-51E8E92CEE01}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{6C49E8EA-C114-4CD1-987F-51E8E92CEE01}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{6C49E8EA-C114-4CD1-987F-51E8E92CEE01}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{6C49E8EA-C114-4CD1-987F-51E8E92CEE01}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{6C49E8EA-C114-4CD1-987F-51E8E92CEE01}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{6C49E8EA-C114-4CD1-987F-51E8E92CEE01}.Release|iPhone.Build.0 = Release|Any CPU
+		{6C49E8EA-C114-4CD1-987F-51E8E92CEE01}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{6C49E8EA-C114-4CD1-987F-51E8E92CEE01}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{9A1F0245-3DA3-461D-ABF5-B8325B29EACA}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{9A1F0245-3DA3-461D-ABF5-B8325B29EACA}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{9A1F0245-3DA3-461D-ABF5-B8325B29EACA}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{9A1F0245-3DA3-461D-ABF5-B8325B29EACA}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{9A1F0245-3DA3-461D-ABF5-B8325B29EACA}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{9A1F0245-3DA3-461D-ABF5-B8325B29EACA}.Debug|iPhone.Build.0 = Debug|iPhone
+		{9A1F0245-3DA3-461D-ABF5-B8325B29EACA}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{9A1F0245-3DA3-461D-ABF5-B8325B29EACA}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{9A1F0245-3DA3-461D-ABF5-B8325B29EACA}.Release|iPhone.ActiveCfg = Release|iPhone
+		{9A1F0245-3DA3-461D-ABF5-B8325B29EACA}.Release|iPhone.Build.0 = Release|iPhone
+		{9A1F0245-3DA3-461D-ABF5-B8325B29EACA}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{9A1F0245-3DA3-461D-ABF5-B8325B29EACA}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Intercept.iOS\Intercept.iOS.csproj
+	EndGlobalSection
+EndGlobal
