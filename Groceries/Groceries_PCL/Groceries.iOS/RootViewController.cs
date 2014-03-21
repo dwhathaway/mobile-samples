@@ -138,8 +138,14 @@ namespace Groceries.iOS
 				if (editingStyle == UITableViewCellEditingStyle.Delete)
 				{
 					// Delete the row from the data source.
-					objects.RemoveAt(indexPath.Row);
+					controller.TableView.BeginUpdates ();
+
+					var groceryItem = objects [indexPath.Row];
+					objects.RemoveAt (indexPath.Row);
+					GroceryService.DeleteGroceryItem (groceryItem);
 					controller.TableView.DeleteRows(new NSIndexPath[] { indexPath }, UITableViewRowAnimation.Fade);
+
+					controller.TableView.EndUpdates ();
 				}
 				else if (editingStyle == UITableViewCellEditingStyle.Insert)
 				{

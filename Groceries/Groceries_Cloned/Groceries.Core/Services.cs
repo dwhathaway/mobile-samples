@@ -86,7 +86,6 @@ namespace Groceries.Core.Services
 		public static bool CreateGroceryItem(GroceryItem groceryItem)
 		{
 			System.Net.WebRequest request = WebRequest.Create("https://api.parse.com/1/classes/Item");
-
 		
 			request.ContentType = "application/json";
 			request.Method = "POST";
@@ -106,6 +105,43 @@ namespace Groceries.Core.Services
 			try
 			{
 				WebResponse response = request.GetResponse();
+				saveSuccess = true;
+			}
+			catch(WebException wex)
+			{
+				//Failed to save
+			}
+			catch(Exception ex)
+			{
+				//Something else happened...
+			}
+
+			return saveSuccess;
+		}
+
+		public static bool DeleteGroceryItem(GroceryItem groceryItem)
+		{
+			System.Net.WebRequest request = WebRequest.Create("https://api.parse.com/1/classes/Item/" + groceryItem.ObjectId);
+
+			request.ContentType = "application/json";
+			request.Method = "DELETE";
+			request.Headers ["X-Parse-Application-Id"] = _appId;
+			request.Headers ["X-Parse-REST-API-Key"] = _apiKey;
+
+			byte[] buffer = Encoding.GetEncoding("UTF-8").GetBytes(JsonConvert.SerializeObject(groceryItem));
+
+			string result = System.Convert.ToBase64String(buffer);
+
+			Stream reqstr = request.GetRequestStream();
+			reqstr.Write(buffer, 0, buffer.Length);
+			reqstr.Close();
+
+			bool saveSuccess = false;
+
+			try
+			{
+				WebResponse response = request.GetResponse();
+
 				saveSuccess = true;
 			}
 			catch(WebException wex)

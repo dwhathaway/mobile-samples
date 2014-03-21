@@ -114,6 +114,42 @@ namespace Groceries.Core.Services
 			return saveSuccess;
 		}
 
+		public static bool DeleteGroceryItem(GroceryItem groceryItem)
+		{
+			var client = new HttpClient ();
+
+			client.DefaultRequestHeaders.Accept.Add (new MediaTypeWithQualityHeaderValue ("application/json"));
+
+			HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Delete, "https://api.parse.com/1/classes/Item/" + groceryItem.ObjectId);
+
+			request.Headers.Add ("X-Parse-Application-Id", _appId);
+			request.Headers.Add ("X-Parse-REST-API-Key", _apiKey);
+
+			request.Content = new StringContent(JsonConvert.SerializeObject(groceryItem));
+
+			bool saveSuccess = false;
+
+			try
+			{
+				var response = client.SendAsync(request).Result;
+
+				//Grab the response text to make sure that it returned the right data
+				var responseText = response.Content.ReadAsStringAsync().Result;
+
+				saveSuccess = true;
+			}
+			catch(WebException wex)
+			{
+				//Failed to save
+			}
+			catch(Exception ex)
+			{
+				//Something else happened...
+			}
+
+			return saveSuccess;
+		}
+
 		private static T DeserializeResponse<T>(string jsonResponse, string rootNode)
 		{
 			JObject o = JObject.Parse(jsonResponse);
