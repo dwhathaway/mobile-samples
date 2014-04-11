@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phoneword_iOS", "Phoneword_iOS\Phoneword_iOS.csproj", "{19F03F8F-8F5D-4F6F-9DDF-CB5779D61A13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phoneword_Common", "Phoneword_Common\Phoneword_Common.csproj", "{08388415-D212-4BC9-93FB-BB4CDC8A28ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phoneword_Droid", "Phoneword_Droid\Phoneword_Droid.csproj", "{273299AF-C0C1-4733-8249-B2608A793594}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08388415-D212-4BC9-93FB-BB4CDC8A28ED}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{08388415-D212-4BC9-93FB-BB4CDC8A28ED}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{08388415-D212-4BC9-93FB-BB4CDC8A28ED}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{08388415-D212-4BC9-93FB-BB4CDC8A28ED}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{08388415-D212-4BC9-93FB-BB4CDC8A28ED}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{08388415-D212-4BC9-93FB-BB4CDC8A28ED}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{08388415-D212-4BC9-93FB-BB4CDC8A28ED}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{08388415-D212-4BC9-93FB-BB4CDC8A28ED}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{08388415-D212-4BC9-93FB-BB4CDC8A28ED}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{08388415-D212-4BC9-93FB-BB4CDC8A28ED}.Release|iPhone.Build.0 = Release|Any CPU
+		{08388415-D212-4BC9-93FB-BB4CDC8A28ED}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{08388415-D212-4BC9-93FB-BB4CDC8A28ED}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{19F03F8F-8F5D-4F6F-9DDF-CB5779D61A13}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{19F03F8F-8F5D-4F6F-9DDF-CB5779D61A13}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{19F03F8F-8F5D-4F6F-9DDF-CB5779D61A13}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{19F03F8F-8F5D-4F6F-9DDF-CB5779D61A13}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{19F03F8F-8F5D-4F6F-9DDF-CB5779D61A13}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{19F03F8F-8F5D-4F6F-9DDF-CB5779D61A13}.Debug|iPhone.Build.0 = Debug|iPhone
+		{19F03F8F-8F5D-4F6F-9DDF-CB5779D61A13}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{19F03F8F-8F5D-4F6F-9DDF-CB5779D61A13}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{19F03F8F-8F5D-4F6F-9DDF-CB5779D61A13}.Release|iPhone.ActiveCfg = Release|iPhone
+		{19F03F8F-8F5D-4F6F-9DDF-CB5779D61A13}.Release|iPhone.Build.0 = Release|iPhone
+		{19F03F8F-8F5D-4F6F-9DDF-CB5779D61A13}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{19F03F8F-8F5D-4F6F-9DDF-CB5779D61A13}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{273299AF-C0C1-4733-8249-B2608A793594}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{273299AF-C0C1-4733-8249-B2608A793594}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{273299AF-C0C1-4733-8249-B2608A793594}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{273299AF-C0C1-4733-8249-B2608A793594}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{273299AF-C0C1-4733-8249-B2608A793594}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{273299AF-C0C1-4733-8249-B2608A793594}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{273299AF-C0C1-4733-8249-B2608A793594}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{273299AF-C0C1-4733-8249-B2608A793594}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{273299AF-C0C1-4733-8249-B2608A793594}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{273299AF-C0C1-4733-8249-B2608A793594}.Release|iPhone.Build.0 = Release|Any CPU
+		{273299AF-C0C1-4733-8249-B2608A793594}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{273299AF-C0C1-4733-8249-B2608A793594}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Phoneword_Droid\Phoneword_Droid.csproj
+	EndGlobalSection
+EndGlobal

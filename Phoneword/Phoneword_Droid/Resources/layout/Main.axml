@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:text="Enter a phoneword:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1" />
+    <EditText
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtInput"
+        android:text="1-855-XAMARIN" />
+    <Button
+        android:id="@+id/btnTranslate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Translate" />
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Call" />
+    <Button
+        android:id="@+id/btnCallHistory"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Call History" />
+</LinearLayout>
