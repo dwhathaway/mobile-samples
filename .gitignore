@@ -18,6 +18,7 @@ bld/
 
 # Components
 [Cc]omponents/
+[Pp]ackages/
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
