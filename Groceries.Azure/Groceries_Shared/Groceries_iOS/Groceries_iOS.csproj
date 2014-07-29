@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{FB6B37E4-C55F-464D-9C73-39450DA9EB5E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Groceries_iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>Groceries_iOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <BuildIpa>true</BuildIpa>
+    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="Microsoft.WindowsAzure.Mobile.Ext">
+      <HintPath>..\Components\azure-mobile-services-1.2.3\lib\ios\Microsoft.WindowsAzure.Mobile.Ext.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Mobile">
+      <HintPath>..\Components\azure-mobile-services-1.2.3\lib\ios\Microsoft.WindowsAzure.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Components\azure-mobile-services-1.2.3\lib\ios\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\Components\azure-mobile-services-1.2.3\lib\ios\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\Components\azure-mobile-services-1.2.3\lib\ios\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="MBProgressHUD">
+      <HintPath>..\Components\mbprogresshud-0.8\lib\ios\MBProgressHUD.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="MasterViewController.cs" />
+    <Compile Include="MasterViewController.designer.cs">
+      <DependentUpon>MasterViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetailViewController.cs" />
+    <Compile Include="DetailViewController.designer.cs">
+      <DependentUpon>DetailViewController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="MainStoryboard.storyboard" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <XamarinComponentReference Include="azure-mobile-services">
+      <Version>1.2.3</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="mbprogresshud">
+      <Version>0.8</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Groceries.Core.iOS\Groceries.Core.iOS.csproj">
+      <Project>{C310E6B0-86D5-4DBF-B783-40685AD1EE8B}</Project>
+      <Name>Groceries.Core.iOS</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
