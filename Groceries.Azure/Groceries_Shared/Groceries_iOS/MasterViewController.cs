@@ -21,6 +21,15 @@ namespace Groceries_iOS
 			Title = NSBundle.MainBundle.LocalizedString ("Master", "Master");
 
 			// Custom initialization
+
+			try
+			{
+
+			}
+			catch(NSErrorException ex) {
+
+			}
+
 		}
 
 		void AddNewItem (object sender, EventArgs args)
